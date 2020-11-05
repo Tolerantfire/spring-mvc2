@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Cars</title>
-    </head>
+</head>
 <body>
 <h1>Cars</h1>
 <table border="1">
     <tr>
         <th>No</th>
-        <th>Model</th>
+        <th>web.Model</th>
         <th>Version</th>
         <th>Colour</th>
     </tr>
     <tr th:each="car, state : ${cars}" class="row" th:classappend="${state.odd} ? 'odd-row' : 'even-row'">
 
         <td th:utext="${state.count}">No</td>
-        <td th:utext="${car.model}">Model</td>
+        <td th:utext="${car.model}">web.Model</td>
         <td th:utext="${car.version}">Version</td>
         <td th:utext="${car.color}">Colour</td>
 
